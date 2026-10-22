@@ -7,6 +7,7 @@ public class CellPhoneApplication {
 
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
+        CellPhone cellPhone3 = new CellPhone(245345,"samsung galaxy", "att", "342-394-5860" , "JJ");
         //What is the serial number? 2597153
         //What model is the phone? iPhone 15 Pro Max
         //Who is the carrier? Verizon
@@ -58,8 +59,10 @@ public class CellPhoneApplication {
 
         display(cellPhone1);
         display(cellPhone2);
+        display(cellPhone3);
         cellPhone1.dial(cellPhone2.getPhoneNumber());
         cellPhone2.dial(cellPhone1.getPhoneNumber());
+        cellPhone1.dial(cellPhone3.getPhoneNumber());
 
     }
     public static void display(CellPhone phone) {
